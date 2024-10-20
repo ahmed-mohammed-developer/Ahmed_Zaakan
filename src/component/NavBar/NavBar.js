@@ -147,10 +147,10 @@ const NavBar = () => {
     );
 
     return (
-        <div className='navbar'>
+        <div className='navbarreact'>
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
-                <a className="navbar-brand" href="#page-top">
+                <a className="navbar-brandreact" href="#page-top">
                     أحمد زعــــكان
                 </a>
                 <div>

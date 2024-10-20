@@ -1,16 +1,26 @@
 .hero {
-    margin-top: 60px;
+    margin-top: 100px;
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     /*background-color: #f5f7fa;*/
 }
 
+.imghero {
+  margin-inline: 15px;
+}
 .imghero img {
     max-width: 47rem;
     width: 100%;
     margin-inline:auto;
     border-radius: 1rem;
     border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px 18px #888888;
+    padding: 5px;
+    box-shadow: 0px 10px 5px #888888;
   }
+  
+  @media (width < 500px) {
+    .hero {
+      margin-block: 50px;
+      /*background-color: #f5f7fa;*/
+  }
+}
