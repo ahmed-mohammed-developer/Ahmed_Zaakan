@@ -7,6 +7,8 @@ import Hero from './component/Landingpage/Hero/Hero';
 import Seteps from './component/Landingpage/Seteps/Seteps';
 import Service from './component/Landingpage/Services/Services.js';
 import Technicalarticles from './component/Landingpage/Technicalarticles/Technicalarticles.js';
+import Latestworks from './component/Landingpage/Latestworks/Latestworks.js';
+import Latestarticles from './component/Landingpage/Latestarticles/Latestarticles.js';
 
 
 const theme = createTheme({
@@ -26,6 +28,8 @@ const App = () => {
       <Service />
       <Seteps />
       <Technicalarticles />
+      <Latestworks />
+      <Latestarticles />
       <Typography variant="h5">السلام عليكم ورحمة الله وبركاته</Typography>
     </ThemeProvider>
   );
