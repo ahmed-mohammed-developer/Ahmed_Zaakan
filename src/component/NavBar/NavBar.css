@@ -1,6 +1,12 @@
 .navbar {
     background-color: #223b40;
     padding-block: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* للتأكد من بقاء النافبار فوق العناصر الأخرى */
+    border-bottom: 1px solid #ffffffce; /* خط سفلي اختياري */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف لإبراز navbar */
 }
 .flexspacebetween {
     display: flex;
@@ -69,6 +75,7 @@
 @media (width < 500px) {
     .navbar-brand {
         font-size: 20px;
+        margin-top: 10px;
     }
     .navbar-bar {
         font-size: 24px !important;
