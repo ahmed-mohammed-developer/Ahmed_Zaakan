@@ -77,6 +77,38 @@
       "view": "https://gohodhod.com/@ahmed-mohammed/issues/3957?preview_token=5fd19284-a9ae-4ff2-ac9d-0301851ff94c"
       }
           ],
+          "technicalarticles": [
+            { "id": 1,
+            "title": "ما هو JSX في React؟", 
+            "description": "JSX (JavaScript XML) هو امتداد لصياغة JavaScript يسمح لك بكتابة عناصر شبيهة بـ HTML داخل JavaScript. يتم تحويل JSX إلى استدعاءات دوال JavaScript بواسطة أدوات مثل Babel، مما يجعل كتابة واجهات المستخدم أكثر سهولة ووضوحًا.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/09/jsx-react_2.html"
+            },
+            { "id": 2,
+            "title": "ما هي Props في React؟", 
+            "description": "Props هي اختصار لكلمة “Properties” وهي وسيلة لتمرير البيانات من مكون إلى آخر في React. تُستخدم props لتمكين المكونات من الوصول إلى بيانات مخصصة وقيم ومعلومات أخرى.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/09/props-react.html"
+            },
+            { "id": 3,
+            "title": "شرح Object Destructuring", 
+            "description": " بالتأكيد! Object destructuring هي ميزة في JavaScript تُستخدم لاستخراج القيم من الكائنات (objects) وتعيينها إلى متغيرات بطريقة مختصرة وواضحة. في React، تُستخدم هذه الميزة بشكل شائع عند التعامل مع props وstate لتحسين قراءة الكود وجعله أكثر وضوحًا.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/09/object-destructuring.html"
+            },
+            { "id": 4,
+            "title": "مفهوم Rendering (التصيير) في React", 
+            "description": " في React، مفهوم Rendering (التصيير) يشير إلى عملية تحويل مكونات React إلى عناصر DOM يمكن عرضها على الشاشة. إليك شرحًا مبسطًا , عند إنشاء مكون React، يتم استدعاء الدالة render() الخاصة به. هذه الدالة تأخذ البيانات المدخلة (props) وتعيد ما يجب عرضه على الشاشة باستخدام JSX.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/09/rendering-react.html"
+            },
+            { "id": 5,
+            "title": "المشغل الثلاثي (Ternary Operator)", 
+            "description": " المشغل الثلاثي (Ternary Operator) في JavaScript هو طريقة مختصرة لكتابة جمل الشرط if...else. يتم استخدامه بشكل متكرر في React.js لتقديم عناصر JSX بناءً على شروط معينة.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/09/ternary-operator.html"
+            },
+            { "id": 6,
+            "title": "شرح DOM", 
+            "description": "نموذج كائن المستند (DOM) هو واجهة برمجية تمثل هيكلية المستندات على الويب. عندما يتم تحميل صفحة ويب، يقوم المتصفح بإنشاء نموذج كائن المستند لهذه الصفحة، مما يسمح للبرامج والنصوص البرمجية بالوصول إلى محتوى الصفحة وتحديثه ديناميكيًا.", 
+            "view": "https://ahmedmohammeddeveloper.blogspot.com/2024/10/dom.html"
+            }
+                ],
           "mybooks": [
             { "id": 1,
             "title": "8 خطوات لإتقان البيع", 

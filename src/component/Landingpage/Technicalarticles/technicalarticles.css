@@ -1,0 +1,49 @@
+.technicalarticles{
+        padding-top: 30px;
+        padding-bottom: 80px;
+}
+.card-sleek {
+    background: linear-gradient(135deg, #388c7c, #223b40);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.card-sleek:hover {
+    transform: translateY(-5px);
+}
+
+.card-sleek .card-body {
+    padding: 2rem;
+}
+
+.card-sleek .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Tajawal";
+}
+
+.card-sleek .card-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* عدد الأسطر التي تريد عرضها */
+}
+
+.card-sleek .btn-sleek {
+    background-color: #fff;
+    color: #388c7c;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-sleek .btn-sleek:hover {
+    background-color: #388c7c;
+    color: #fff;
+}

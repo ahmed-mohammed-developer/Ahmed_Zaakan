@@ -6,6 +6,7 @@ import NavBar from './component/NavBar/NavBar';
 import Hero from './component/Landingpage/Hero/Hero';
 import Seteps from './component/Landingpage/Seteps/Seteps';
 import Service from './component/Landingpage/Services/Services.js';
+import Technicalarticles from './component/Landingpage/Technicalarticles/Technicalarticles.js';
 
 
 const theme = createTheme({
@@ -24,6 +25,7 @@ const App = () => {
       <Hero />
       <Service />
       <Seteps />
+      <Technicalarticles />
       <Typography variant="h5">السلام عليكم ورحمة الله وبركاته</Typography>
     </ThemeProvider>
   );
