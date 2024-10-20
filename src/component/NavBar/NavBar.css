@@ -5,7 +5,7 @@
     top: 0;
     width: 100%;
     z-index: 1000; /* للتأكد من بقاء النافبار فوق العناصر الأخرى */
-    border-bottom: 1px solid #ffffffce; /* خط سفلي اختياري */
+    border-bottom: 1px solid #223b40; /* خط سفلي اختياري */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف لإبراز navbar */
 }
 .flexspacebetween {

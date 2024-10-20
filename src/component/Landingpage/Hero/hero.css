@@ -5,9 +5,6 @@
     /*background-color: #f5f7fa;*/
 }
 
-.imghero {
-  margin-inline: 15px;
-}
 .imghero img {
     max-width: 47rem;
     width: 100%;
@@ -20,7 +17,7 @@
   
   @media (width < 500px) {
     .hero {
-      margin-block: 50px;
+      margin-block: 80px;
       /*background-color: #f5f7fa;*/
   }
 }
