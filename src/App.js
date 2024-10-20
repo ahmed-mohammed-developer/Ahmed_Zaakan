@@ -3,7 +3,8 @@ import React from 'react';
 import { createTheme, ThemeProvider   } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import NavBar from './component/NavBar/NavBar';
-import Hero from './component/Hero/Hero';
+import Hero from './component/Landingpage/Hero/Hero';
+import Seteps from './component/Landingpage/Seteps/Seteps';
 
 
 const theme = createTheme({
@@ -20,6 +21,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <NavBar />
       <Hero />
+      <Seteps />
       <Typography variant="h5">السلام عليكم ورحمة الله وبركاته</Typography>
     </ThemeProvider>
   );
