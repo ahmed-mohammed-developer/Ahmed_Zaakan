@@ -150,9 +150,9 @@ const NavBar = () => {
         <div className='navbarreact'>
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
-                <a className="navbar-brandreact" href="#page-top">
+                <h1 className="navbar-brandreact">
                     أحمد زعــــكان
-                </a>
+                </h1>
                 <div>
                     <Button onClick={toggleDrawer('right', true)}>
                         <HorizontalSplitOutlinedIcon className='navbar-bar' />
