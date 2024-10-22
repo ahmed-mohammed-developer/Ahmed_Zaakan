@@ -169,22 +169,22 @@
           "mybooks": [
             { "id": 1,
             "title": "8 خطوات لإتقان البيع", 
-            "img": "https://i.postimg.cc/d18rs6Yz/1.png",
+            "img": "./images/8sales.png",
             "down": "https://drive.google.com/file/d/16mtIVj0SzGzTJ334MlViJsppVDPj4zCX/view"
             },
             { "id": 2,
             "title": "8 مهارات خفية لإتقان البيع", 
-            "img": "https://i.postimg.cc/brgnbvdg/3.png",
+            "img": "./images/8skile.png",
             "down": "https://drive.google.com/file/d/1FlD5Oh030KX1N5Gm0E94wPVJ1XDypnhf/view"
             },
             { "id": 3,
             "title": "أساسيات المبيعات", 
-            "img": "https://i.postimg.cc/3Jrmh2bc/2.png",
+            "img": "./images/salesbaick.png",
             "down": "https://drive.google.com/file/d/1hr9pmf9HvqZFSttAGKTdfAZNAX4If4uj/view"
             },
             { "id": 4,
             "title": "أسس التسويق", 
-            "img": "https://i.postimg.cc/SQfCHgV9/4.png",
+            "img": "./images/markiting.png",
             "down": "https://drive.google.com/file/d/1jKGcV15db5qQuO3g6KK3tKVdpPoLOFEb/view"
             }
                 ]

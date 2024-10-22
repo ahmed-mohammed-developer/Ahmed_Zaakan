@@ -4,6 +4,8 @@ import axios from 'axios';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -74,7 +76,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero" id='hero'>
+    <Fade top>
+    <div className="hero" id='heroid'>
       <div className="container">
         <Slider {...settings}>
           {dataHero.map((item, index) => (
@@ -89,6 +92,7 @@ const Hero = () => {
         </Slider>
       </div>
     </div>
+    </Fade>
   );
 }
 

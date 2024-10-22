@@ -1,0 +1,15 @@
+
+.moreread .downbookicon {
+    font-size: 19px;
+}
+.mybookstitl{
+    color: #121f3e;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}

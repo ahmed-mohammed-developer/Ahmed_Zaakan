@@ -1,10 +1,13 @@
 import React from 'react'
 import './seteps.css'
+import Fade from 'react-reveal/Fade';
+
 
 
 const Seteps = () => {
     return (
-        <div className="setps">
+       <Fade top>
+         <div className="setps" id='setpsid'>
           <div className="container">
             <div className="row">
               <div className="section-title">
@@ -82,6 +85,7 @@ const Seteps = () => {
         </div>
           </div>
         </div>
+       </Fade>
       );
 }
 

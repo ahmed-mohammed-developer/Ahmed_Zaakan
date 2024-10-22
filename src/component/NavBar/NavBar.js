@@ -147,7 +147,7 @@ const NavBar = () => {
     );
 
     return (
-        <div className='navbarreact'>
+        <div className='navbarreact' id='navbarid'>
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
                 <h1 className="navbar-brandreact">

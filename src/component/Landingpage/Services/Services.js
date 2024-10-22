@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faObjectGroup } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -11,7 +13,8 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
   return (
-    <div className="services">
+    <Fade top>
+        <div className="services" id="servicesid">
       <div className="container">
         <div className="row">
           <div className="section-title">
@@ -53,6 +56,8 @@ const Services = () => {
           </div>
       </div>
     </div>
+    </Fade>
+    
   );
 }
 export default Services

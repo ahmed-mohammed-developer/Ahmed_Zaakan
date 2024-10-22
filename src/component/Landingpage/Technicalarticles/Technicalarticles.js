@@ -1,6 +1,8 @@
 import React, {useState , useEffect} from 'react'
 import './technicalarticles.css'
 import axios from 'axios';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -19,7 +21,8 @@ const Technicalarticles = () => {
         });
     }, []);
     return (
-        <div className="technicalarticles">
+       <Fade top>
+         <div className="technicalarticles">
           <div className="container">
             <div className="row">
               <div className="section-title">
@@ -42,6 +45,7 @@ const Technicalarticles = () => {
             </div>
           </div>
         </div>
+       </Fade>
       );
 }
 

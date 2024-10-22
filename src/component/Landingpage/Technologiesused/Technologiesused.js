@@ -8,6 +8,8 @@ import { faSass } from '@fortawesome/free-brands-svg-icons';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faM } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -56,7 +58,8 @@ const Technologiesused = () => {
   ];
 
   return (
-    <div className="technologiesused">
+   <Fade top>
+     <div className="technologiesused" id='technologiesusedid'>
       <div className="container">
         <div className="row">
           <div className="section-title">
@@ -76,6 +79,7 @@ const Technologiesused = () => {
         </div>
       </div>
     </div>
+   </Fade>
   );
 };
 

@@ -5,6 +5,8 @@ import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCompass } from '@fortawesome/free-solid-svg-icons';
 import { faDraftingCompass } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -41,7 +43,8 @@ const Features = () => {
        
       ];
     return (
-        <div className="setps">
+      <Fade top>
+        <div className="setps" id='featuresid'>
           <div className="container">
             <div className="row">
               <div className="section-title">
@@ -63,10 +66,10 @@ const Features = () => {
                 </div>
             </div>
                 ))}
-
         </div>
           </div>
         </div>
+      </Fade>
       );
 }
 

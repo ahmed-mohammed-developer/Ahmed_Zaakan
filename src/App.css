@@ -81,3 +81,18 @@
 }
 
 /* ====== CUSTOM FONTS =======*/
+.whatsapp-float {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: auto;
+    right: 15px;
+    background-color: #223b40;
+    color: #FFF;
+    border-radius: 50%;
+    z-index: 1000;
+  }

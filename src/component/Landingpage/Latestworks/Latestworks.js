@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -24,7 +26,8 @@ const Latestworks = () => {
         });
     }, []);
   return (
-    <div className="setps">
+    <Fade top>
+          <div className="setps">
     <div className="container">
       <div className="row">
         <div className="section-title">
@@ -52,6 +55,8 @@ const Latestworks = () => {
       </div>
     </div>
   </div>
+    </Fade>
+  
   )
 }
 
