@@ -1,0 +1,35 @@
+
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.step-card {
+    height: 100%;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.setps .card-title {
+    font-family: "Tajawal";
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
+}
+.setps .card-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555555;
+    font-weight: 300;
+}
+.feature-icon.color{
+    color: #223b40;
+}

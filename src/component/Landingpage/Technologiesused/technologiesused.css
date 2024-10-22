@@ -1,0 +1,30 @@
+.technologiesused {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color: #fff;
+
+}
+
+.feature-box {
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #223b40, #388c7c);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 15px;
+
+}
+.feature-title {
+    font-family: "Tajawal";
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
+    color: #fff;
+
+}

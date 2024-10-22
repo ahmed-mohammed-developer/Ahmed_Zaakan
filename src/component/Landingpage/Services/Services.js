@@ -1,5 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Services.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faObjectGroup } from '@fortawesome/free-solid-svg-icons';

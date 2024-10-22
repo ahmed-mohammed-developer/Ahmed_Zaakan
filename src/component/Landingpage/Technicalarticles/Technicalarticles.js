@@ -1,7 +1,6 @@
 import React, {useState , useEffect} from 'react'
 import './technicalarticles.css'
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

@@ -1,6 +1,5 @@
 import './latestworks.css'
 import React, {useState, useEffect} from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

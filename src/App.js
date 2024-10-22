@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { createTheme, ThemeProvider   } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import NavBar from './component/NavBar/NavBar';
@@ -9,6 +10,8 @@ import Service from './component/Landingpage/Services/Services.js';
 import Technicalarticles from './component/Landingpage/Technicalarticles/Technicalarticles.js';
 import Latestworks from './component/Landingpage/Latestworks/Latestworks.js';
 import Latestarticles from './component/Landingpage/Latestarticles/Latestarticles.js';
+import Technologiesused from './component/Landingpage/Technologiesused/Technologiesused.js';
+import Features from './component/Landingpage/Features/Features.js';
 
 
 const theme = createTheme({
@@ -27,6 +30,8 @@ const App = () => {
       <Hero />
       <Service />
       <Seteps />
+      <Technologiesused />
+      <Features />
       <Technicalarticles />
       <Latestworks />
       <Latestarticles />
