@@ -54,6 +54,45 @@
 "type": ["متجر إلكتروني"],
 "date": "2024-08-15T10:10:00Z",
 "qalip": "https://ahmed-mohammed-developer.github.io/qalipAhmedMahmmed/#/Details/25"
+},
+{ "id": 4,
+"title": "صفحة هبوط شخصية", 
+"description": "Blue Personal Portfolio Template هو الحل الأمثل لك! يتميز هذا القالب بتصميمه الأنيق والحديث الذي يجمع بين الألوان الزرقاء الهادئة والتنسيق المتقن، مما يجعله الخيار المثالي للمحترفين والمبدعين على حد سواء. تصميم جذاب: ألوان زرقاء مريحة للعين وتصميم عصري يلفت الأنظار , سهولة التخصيص: يمكنك تعديل النصوص والصور بسهولة لتناسب احتياجاتك الشخصية , استجابة عالية: يتوافق مع جميع الأجهزة والشاشات، مما يضمن عرضًا مثاليًا على الهواتف الذكية والأجهزة اللوحية وأجهزة", 
+"img": "./images/blue.png",
+"view": "https://ahmed-mohammed-developer.github.io/prto2_public/",
+"download": "https://github.com/ahmed-mohammed-developer/prto2_public",
+"By": "أحمد محمد",
+"ByUrl": "",
+"tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive", "webpack"],
+"type": ["صفحة هبوط"],
+"date": "2024-08-15T10:10:00Z",
+"qalip": "https://ahmed-mohammed-developer.github.io/qalipAhmedMahmmed/#/Details/17"
+},
+{ "id": 5,
+"title": "قالب شبيه لموقع اليوتيوب", 
+"description":"قالب شبيه لموقع اليوتيوب يحتوي على الصفحة الرئسية للتطبيق وسجل المشاهدة كذلك صفحة تفاصيل الفديو بالإضافة إلى صفحة القناة , يمكن تطوير التطبيق وإضافة الكثير من الأفكار .", 
+"img": "./images/youtuop.png",
+"view": "https://ahmed-mohammed-developer.github.io/AlfTube-public/",
+"download": "https://github.com/ahmed-mohammed-developer/AlfTube-public",
+"By": "أحمد محمد",
+"ByUrl": "",
+"tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive", "webpack"],
+"type": ["صفحة هبوط"],
+"date": "2024-08-15T10:10:00Z",
+"qalip": "https://ahmed-mohammed-developer.github.io/qalipAhmedMahmmed/#/Details/24"
+},
+{ "id": 5,
+"title": "صفحة هبوط لشركة", 
+"description":"صفحة هبوط لشركة إينانس لخدمات الصيانة والإصلاح , تحتوي الصفحة على عدة أقسام منها قسم التنقل العلوي , القسم التعريفي بالشركة , قسم من نحن , قسم المميزات , قسم أرقام الشركة , قسم كيف الحصول على خدمتنا . الصفحة متجاوبة مع جميع أحجام الشاشات .", 
+"img": "./images/Einans.png",
+"view": "https://ahmed-mohammed-developer.github.io/INANCE_public/",
+"download": "https://github.com/ahmed-mohammed-developer/INANCE_public",
+"By": "أحمد محمد",
+"ByUrl": "",
+"tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive", "webpack"],
+"type": ["صفحة هبوط"],
+"date": "2024-08-15T10:10:00Z",
+"qalip": "https://ahmed-mohammed-developer.github.io/qalipAhmedMahmmed/#/Details/13"
 }
 
     ],
@@ -62,7 +101,7 @@
       "title": "صلاتك صلاتك", 
       "description": "حينما يتحدث أحدهم عن الصلاة تجد أنه يكرر الكلمة أكثر من مرة مرات متتالية لأن الكلمة تشرح مضمونها ومبتغاها .يالله فقط كلمة الصلاة كفيلة بتحريك كثير من الأشياء بداخلك ومنها حلاوة الصلاة والوقوف بين يد الله عز وجل .كلمة الصلاة كفيلة بزجرك عند التقصير والتخاذل في أدائها .", 
       "img": "./images/salatk.jpg",
-      "view": "https://gohodhod.com/@ahmed-mohammed/issues/6973?preview_token=251bcf30-d1c1-4bc5-a512-e19d3ad970df"
+      "view": "https://ahmedzaakan.blogspot.com/2024/10/blog-post_22.html"
       },
       { "id": 2,
       "title": "هون على نفسك", 
@@ -74,7 +113,25 @@
       "title": "الدنيا همه !", 
       "description": "في زحام الحياة وإنشغال البعض بتوفير لقمة العيش والسعي الدؤوب لمجاراة تكلفة المعيشة الباهظة والإنشغال في ملذات الحياة ومتاعبها يغفل البعض عن أمر مهم ومصيري لكل إنسان على وجه الأرض ويغير قواعد اللعبة بالنسبة إليه ويغير قواعد الحياة ونظرته لها", 
       "img": "./images/adonia1.png",
-      "view": "https://gohodhod.com/@ahmed-mohammed/issues/3957?preview_token=5fd19284-a9ae-4ff2-ac9d-0301851ff94c"
+      "view": "https://ahmedzaakan.blogspot.com/2024/10/2465-4105-2-634.html"
+      },
+      { "id": 4,
+      "title": "رمضان والبدايات الجديدة", 
+      "description": "دائما قبل بداية شهر رمضان المبارك , يكون الجميع متحمس لإنجاز بعض الأمور العالقة لديه , أو بداية خطط جديدة , ويكثر الحديث عن هذا الأمر في وسائل الإعلام من حيث أن رمضان فرصة للانطلاقة القوية لأي أمر في حياتك ", 
+      "img": "./images/ramdan1.png",
+      "view": "https://ahmedzaakan.blogspot.com/2024/10/blog-post_6.html"
+      },
+      { "id": 5,
+      "title": "التفكير الاستراتيجي", 
+      "description": "والتفكير الاستراتيجي مهارة مهمة للجميع وتزداد أهميتها عندما تسعى للحصول على هدف محدد في حياتك سواء على الصعيد المهني أو الشخصي . والجميع يطالبك بالتفكير بطريقة استراتيجية وكتابة الخطوات والأهداف خاصة إذا كنت في منصب قيادي في عملك , لكن لا أحد يخبرك كيف القيام بذلك ! ", 
+      "img": "./images/Estratigi.png",
+      "view": "https://ahmedzaakan.blogspot.com/2023/06/blog-post_52.html"
+      },
+      { "id": 6,
+      "title": "تحدث إلى نفسك", 
+      "description": "من المهم أن يكون حديثك إلى نفسك إيجابيا فهذا ينعكس عليك بشكل كبير والعقل يسجل كلماتك ويعززها من خلال تصرفاتك وسلوكك وتفكيرك . ", 
+      "img": "./images/spekertome.png",
+      "view": "https://ahmedzaakan.blogspot.com/2023/06/blog-post_4.html"
       }
           ],
           "technicalarticles": [

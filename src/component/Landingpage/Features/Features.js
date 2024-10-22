@@ -54,7 +54,7 @@ const Features = () => {
             <div class="col-md-4" key={index}>
                 <div class="card step-card">
                     <div class="card-body text-center">
-                        <div class="step-icon mx-auto">
+                        <div class="step-iconfet mx-auto">
                             {item.icon}
                         </div>
                         <h5 class="card-title">{item.title}</h5>

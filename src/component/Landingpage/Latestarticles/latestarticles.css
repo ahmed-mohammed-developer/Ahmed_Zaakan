@@ -16,3 +16,8 @@
 .moreread a:hover {
     background-color: #285f56;
 }
+
+.card-img-top.blog{
+    height: 300px;
+
+}

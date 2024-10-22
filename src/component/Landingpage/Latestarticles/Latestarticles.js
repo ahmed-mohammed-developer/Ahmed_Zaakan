@@ -32,7 +32,7 @@ const Latestarticles = () => {
               <div className="card cardlastprojict">
               <a href={item.view} target="_blank" rel="noopener noreferrer">
                 <div></div>
-                <img className="card-img-top" src={item.img} alt={item.title} />
+                <img className="card-img-top blog" src={item.img} alt={item.title} />
                 <div className="card-body latestworks-body">
                   <h5 className="card-title latestworks-h5">{item.title}</h5>
                   <p className="card-text latestworks-p">{item.description}</p>
