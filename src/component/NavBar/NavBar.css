@@ -28,9 +28,7 @@
 .navbar-brandreact:focus {
     color: #fff;
 }
-.navbar-nav .nav-link.active {
-    color: #fff;
-}
+
 .navbar-bar {
     font-size: 32px !important;
     color: #ffffffce;
@@ -91,3 +89,9 @@
         font-size: 20px;
     }
 }
+
+.list-item-button.active {
+    background-color: #e0f7fa; /* لون الخلفية عند التفعيل */
+    color: #141e09; /* لون النص عند التفعيل */
+  }
+  
