@@ -159,6 +159,8 @@ const NavBar = () => {
             </List>
         </Box>
     );
+    
+
 
     return (
         <div className='navbarreact' id='navbarid'>

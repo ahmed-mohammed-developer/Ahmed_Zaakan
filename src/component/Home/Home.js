@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Hero from '../Landingpage/Hero/Hero.js'
 import Seteps from '../Landingpage/Seteps/Seteps';
 import Service from '../Landingpage/Services/Services.js';
@@ -11,6 +11,9 @@ import Contactme from '../Landingpage/Contactme/Contactme.js';
 import MyBooks from '../Landingpage/MyBooks/MyBooks.js';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
+  }, []);
   return (
     <>
     <Hero />
