@@ -21,7 +21,6 @@ const Technicalarticles = () => {
         });
     }, []);
     return (
-       <Fade top>
          <div className="technicalarticles">
           <div className="container">
             <div className="row">
@@ -30,6 +29,7 @@ const Technicalarticles = () => {
                 <span className="line"></span>
               </div>
             </div>
+            <Fade top>
             <div className='row'>
             {dataHero.map((item, index) => (
                 <div className='col-md-6' key={index}>
@@ -43,9 +43,9 @@ const Technicalarticles = () => {
                 </div>
                     ))}
             </div>
+            </Fade>
           </div>
         </div>
-       </Fade>
       );
 }
 

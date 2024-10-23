@@ -2,7 +2,6 @@ import './MyBooks.css'
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import { FaArrowDown } from "react-icons/fa";
-import Fade from 'react-reveal/Fade';
 
 
 
@@ -25,7 +24,6 @@ const MyBooks = () => {
 
 
   return (
-    <Fade top>
        <div className="setps" id="Mybooks">
     <div className="container">
       <div className="row">
@@ -55,7 +53,6 @@ const MyBooks = () => {
       </div>
     </div>
   </div>
-    </Fade>
   )
 }
 

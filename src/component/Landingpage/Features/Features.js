@@ -43,7 +43,6 @@ const Features = () => {
        
       ];
     return (
-      <Fade top>
         <div className="setps" id='featuresid'>
           <div className="container">
             <div className="row">
@@ -52,24 +51,25 @@ const Features = () => {
                 <span className="line"></span>
               </div>
             </div>
-        <div class="row g-4">
+            <Fade top>
+        <div className="row g-4">
         {DeatelisSection.map((item, index) => (
-            <div class="col-md-4" key={index}>
-                <div class="card step-card">
-                    <div class="card-body text-center">
-                        <div class="step-iconfet mx-auto">
+            <div className="col-md-4" key={index}>
+                <div className="card step-card">
+                    <div className="card-body text-center">
+                        <div className="step-iconfet mx-auto">
                             {item.icon}
                         </div>
-                        <h5 class="card-title">{item.title}</h5>
-                        <p class="card-text">{item.des}</p>
+                        <h5 className="card-title">{item.title}</h5>
+                        <p className="card-text">{item.des}</p>
                     </div>
                 </div>
             </div>
                 ))}
         </div>
+        </Fade>
           </div>
         </div>
-      </Fade>
       );
 }
 

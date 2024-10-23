@@ -2,7 +2,6 @@ import './latestarticles.css'
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import { FaChevronLeft } from "react-icons/fa";
-import Fade from 'react-reveal/Fade';
 
 
 
@@ -22,7 +21,6 @@ const Latestarticles = () => {
     }, []);
 
   return (
-    <Fade top >
           <div className="technicalarticles">
     <div className="container">
       <div className="row">
@@ -52,9 +50,7 @@ const Latestarticles = () => {
           ))}
       </div>
     </div>
-  </div>
-    </Fade>
-  
+  </div>  
   )
 }
 

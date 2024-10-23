@@ -1,23 +1,27 @@
 import './footer.css'
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBloggerB } from '@fortawesome/free-brands-svg-icons';
+import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 
 const Footer = () => {
     const year = new Date().getFullYear(); // يحصل على السنة الحالية
   return (
-    <Fade top>
 
     <div className='footer'>
       <div className="main-footer ">
         <div className="container">
-            <div className="row mb-5 baner">
+            <div className="row mb-2 baner">
                 <div className="col-lg-3 col-md-6 col-sm-6 imgSection marginBottom">
                 <h2>أحمد زعــــكان</h2>
                 </div>
-                
-                
                     <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="deatelsSection">
                         <h3>الأقسام</h3>
@@ -43,13 +47,17 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
-                <div className="deatelsSection marginBottom">
+                <div className="deatelsSection  marginb">
                         <h3>أبقى على تواصل</h3>
-                        <a href="https://x.com/ahmed_M_Js" target='_blank' rel='noreferrer'><i className="fa-brands fa-x-twitter footericon"></i></a>
-                        <a href="https://www.linkedin.com/in/ahmedmohammeddeveloper/" target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin footericon"></i></a>
-                        <a href="mailto:ahmed.mohammed.developer@gmail.com"><i className="fa-regular fa-envelope-open footericon"></i></a>
+                        <a href="https://x.com/ahmed_M_Js" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faXTwitter} className="footericon"/></a>
+                        <a href="https://www.linkedin.com/in/ahmedmohammeddeveloper/" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="footericon"/></a>
+                        <a href="mailto:ahmed.mohammed.developer@gmail.com"><FontAwesomeIcon icon={faEnvelopeOpen} className="footericon"/></a>
                         
-                    </div>
+                </div>
+                <div className="deatelsSection marginBottom">
+                        <a href="https://ahmedmohammeddeveloper.blogspot.com/" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faBloggerB}className="footericon"/></a>
+                        <a href="https://ahmedzaakan.blogspot.com/" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faAlignLeft}  className="footericon"/></a>
+                </div>
                 </div>
             </div>
             <div className="row baner">
@@ -64,7 +72,6 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    </Fade>
   )
 }
 

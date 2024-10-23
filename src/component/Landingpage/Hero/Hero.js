@@ -4,7 +4,6 @@ import axios from 'axios';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Fade from 'react-reveal/Fade';
 
 
 
@@ -76,7 +75,6 @@ const Hero = () => {
   }, []);
 
   return (
-    <Fade top>
     <div className="hero" id='heroid'>
       <div className="container">
         <Slider {...settings}>
@@ -92,7 +90,6 @@ const Hero = () => {
         </Slider>
       </div>
     </div>
-    </Fade>
   );
 }
 

@@ -58,7 +58,6 @@ const Technologiesused = () => {
   ];
 
   return (
-   <Fade top>
      <div className="technologiesused" id='technologiesusedid'>
       <div className="container">
         <div className="row">
@@ -68,6 +67,7 @@ const Technologiesused = () => {
           </div>
         </div>
         <div className="row">
+        <Fade top>
           {DeatelisSection.map((item, index) => (
             <div className="col-md-3" key={index}>
               <div className="feature-box">
@@ -76,10 +76,10 @@ const Technologiesused = () => {
               </div>
             </div>
           ))}
+            </Fade>
         </div>
       </div>
     </div>
-   </Fade>
   );
 };
 
