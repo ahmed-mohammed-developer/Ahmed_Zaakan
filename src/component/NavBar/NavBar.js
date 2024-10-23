@@ -45,25 +45,26 @@ const NavBar = () => {
         >
             <List component="nav">
                 
-        <li className="list-item">
-          <ListItem disablePadding>
-            <ListItemButton
-              className={({ isActive }) => (isActive ? "list-item-button active" : "list-item-button")}
-              component={NavLink}
-              to="/"
-              sx={{ display: 'flex', justifyContent: 'space-between' }}
-            >
-              <ListItemText primary="الصفحة الرئسية" sx={{ textAlign: 'right' }} />
-              <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                <HomeOutlinedIcon />
-              </ListItemIcon>
-            </ListItemButton>
-          </ListItem>
-        </li>
+        
+            <li className="list-item">
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="الصفحة الرئسية" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <HomeOutlinedIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
+                </li>
                 <li className="list-item">
                 <ListItem disablePadding>
                     <ListItemButton
-                     className="list-item-button"
+                    className="list-item-button"
                     component={NavLink}
                     to="/resume"
                     sx={{ display: 'flex', justifyContent: 'space-between' }}
@@ -87,7 +88,7 @@ const NavBar = () => {
                 </li>
                 <li className="list-item">
                   <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between'  }} disabled>
                             <ListItemText primary="المهارات التقنية" sx={{ textAlign: 'right' }} />
                             <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
                                 <ConstructionOutlinedIcon />

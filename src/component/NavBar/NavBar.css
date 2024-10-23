@@ -91,7 +91,10 @@
 }
 
 .list-item-button.active {
-    background-color: #e0f7fa; /* لون الخلفية عند التفعيل */
-    color: #141e09; /* لون النص عند التفعيل */
+    background-color: #223b40 !important;
+    color: #ffffffce !important;
   }
+  .css-1853w64-MuiButtonBase-root-MuiListItemButton-root.active svg {
+    color: #ffffffce;
+}
   
