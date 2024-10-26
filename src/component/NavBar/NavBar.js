@@ -67,8 +67,8 @@ const NavBar = () => {
                     className="list-item-button"
                     component={NavLink}
                     to="/resume"
-                    sx={{ display: 'flex', justifyContent: 'space-between' }}
-                        >
+                    sx={{ display: 'flex', justifyContent: 'space-between'  }}
+                    disabled>
                     <ListItemText primary="السيرة الذاتية" sx={{ textAlign: 'right' }} />
                     <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
                         <DescriptionOutlinedIcon />
@@ -77,14 +77,20 @@ const NavBar = () => {
                 </ListItem>
                 </li>
                 <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="قالب الأعمال" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <PhotoCameraBackOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="https://qalib-ahmed-zaakan.netlify.app/"
+                    target='_blank'
+                    sx={{ display: 'flex', justifyContent: 'space-between'  }}
+                    >
+                    <ListItemText primary="قالب الأعمال" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <PhotoCameraBackOutlinedIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
                   <ListItem disablePadding>
