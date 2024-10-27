@@ -16,6 +16,54 @@
     font-family: "Tajawal", sans-serif !important;
 }
 .rightsection {
-    border: 1px solid #000;
+  margin-bottom: 20px !important;
+
+}
+.leftSection {
+    padding: 4px;
+    background-color: #f0c310b9;
     border-radius: 10px;
+    height: fit-content;
+}
+.leftSection h3 {
+    font-family: "Tajawal", sans-serif !important;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.leftSection ul li {
+    font-size: 20px;
+    font-weight: 400;
+}
+.buttonnotes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.checkSection {
+    background-color: #10f041b9;
+}
+.offSection {
+    background-color: #4d5059b9;
+}
+.checkSection ,
+.offSection {
+    padding: 4px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-top: 50px;
+}
+.checkSection h3 ,
+.offSection h3 {
+    font-family: "Tajawal", sans-serif !important;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.checkSection ul li ,
+.offSection ul li {
+    font-size: 20px;
+    font-weight: 400;
 }
