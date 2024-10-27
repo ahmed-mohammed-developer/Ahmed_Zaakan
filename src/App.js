@@ -9,6 +9,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './component/Home/Home.js';
 import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';
 import Resume from './component/Resume/Resume.js';
+import Notes from './component/Notes/Notes.js';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="Resume" element={<Resume />} />
+      <Route path="/Notes" element={<Notes />} />
       <Route path="*" element={<NotFoundPage />} />
       </Routes>
       </HashRouter>

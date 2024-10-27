@@ -22,6 +22,10 @@ import ImportContactsOutlinedIcon from '@mui/icons-material/ImportContactsOutlin
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import { NavLink  } from 'react-router-dom'
+import { faClipboard } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 
 const NavBar = () => {
@@ -161,6 +165,21 @@ const NavBar = () => {
                             </ListItemIcon>
                         </ListItemButton>
                     </ListItem>
+                </li>
+                <li className="list-item">
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Notes"
+                    sx={{ display: 'flex', justifyContent: 'space-between'  }}
+                    >
+                    <ListItemText primary="المفكرة" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                    <FontAwesomeIcon icon={faClipboard} />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
             </List>
         </Box>
