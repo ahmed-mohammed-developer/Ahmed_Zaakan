@@ -77,7 +77,6 @@ const Notes = () => {
         <HighlightOffIcon  style={{paddingRight: "5px"}}/>
       </Button>
       </div>
-     
         </div>
       </Grid>
     </Grid>
