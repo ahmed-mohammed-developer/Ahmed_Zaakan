@@ -18,7 +18,27 @@ const noteslist = [
 
 const Notes = () => {
   const [addnote, setAddnote] = useState(noteslist);
-  const [descriptioninput, setDescriptioninput] = useState("")
+  const [descriptioninput, setDescriptioninput] = useState("");
+
+  // Function to handle check click
+  const handleCheckClick = (ideasId) => {
+    const updatedisCoplet = addnote.map((t) => {
+      if (t.id === ideasId) {
+        if (!t.isCompleted) {
+          t.isCompleted = true;
+        }
+      }
+      return t;
+    });
+    setAddnote(updatedisCoplet);
+  };
+
+    // Function to handle Delelte click
+    function handleCheckClickDeleteConfrim(ideasId){
+     const updatedNotes = addnote.filter((t) => t.id !== ideasId)
+      setAddnote(updatedNotes);
+
+    }
 
   // Function to add new note
   const handleAddnote = () => {
@@ -26,24 +46,33 @@ const Notes = () => {
       id: uuidv4(),
       description: descriptioninput,
       isCompleted: false
-    }
-    setAddnote([...addnote, newNote])
-    setDescriptioninput("")
+    };
+    setAddnote([...addnote, newNote]);
+    setDescriptioninput("");
   };
 
-  const Ideasmap = addnote.map((n) => {
-    return <Ideas key={n.id} description={n.description} />;
-  });
+  // Maps for ideas and completed tasks
+  const Ideasmap = addnote
+    .filter(n => !n.isCompleted)
+    .map((n) => {
+      return <Ideas key={n.id} note={n} handleCheckClick={handleCheckClick} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} />;
+    });
+
+  const CompletedTasks = addnote
+    .filter(n => n.isCompleted)
+    .map((n) => {
+      return <Ideas key={n.id} note={n} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} />;
+    });
 
   return (
-    <div className='note'>
+      <div className='note'>
       <CssBaseline />
       <Container maxWidth="lg">
         <Typography variant="h2" gutterBottom className='titlenote'>
-          المفكرة :
+           قائمة المهام:
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={12}>
             <div>
               <TextField
                 id="filled-multiline-static"
@@ -66,36 +95,28 @@ const Notes = () => {
                     fontWeight: 400,
                     border: '1px solid black'
                   }}
-                  onClick={() => {
-                    handleAddnote();
-                  }}
+                  onClick={handleAddnote}
                 >
                   إضافة
                 </Button>
               </Stack>
             </div>
           </Grid>
-          <Grid item xs={12} md={6}>
+        </Grid>
+        <Grid container spacing={2}>
+        <Grid item xs={12} md={12}>
             <div className="leftSection">
-              <h3>الأفكار</h3>
+              <h3>المهام غير المنجزة</h3>
               {Ideasmap}
             </div>
           </Grid>
-        </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <div className="checkSection">
-              <h3>المنجزة</h3>
-              <ul>
-                <li>تم الإنجاز</li>
-              </ul>
-            </div>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <div className="offSection">
-              <h3>غير المنجزة</h3>
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={12}>
+            <div className="checkSection">
+              <h3>المهام المنجزة</h3>
               <ul>
-                <li>تم الإنجاز</li>
+                {CompletedTasks}
               </ul>
             </div>
           </Grid>
