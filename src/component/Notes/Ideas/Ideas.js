@@ -7,14 +7,29 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
+import TextField from '@mui/material/TextField';
 
 
-const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim}) => {
+
+const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleCheckClickUpdateConfrim}) => {
     const [showDeleteAlert, setShowDeleteAlert] = useState(false)
+    const [showUpdataAlert, setShowUpdataAlert] = useState(false)
+
 
     function handleCheckTrueIsComplet() {
         handleCheckClick(note.id)
     }
+    //function Update
+    function handleUpdataClose() {
+      setShowUpdataAlert(false)
+   }
+   function handleUpdatClick() {
+    setShowUpdataAlert(true)
+ }
+ function handleUpdateConfrim(){
+  handleCheckClickUpdateConfrim(note.id)
+}
+    //function Update
     function handleDeletClick() {
        setShowDeleteAlert(true)
     }
@@ -50,7 +65,35 @@ const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim}) => {
         </DialogActions>
       </Dialog>
         {/* DELETE MODEL */}
-
+        {/* Edit MODEL */}
+        <Dialog
+        onClose={handleUpdataClose}
+        open={showUpdataAlert}
+        PaperProps={{
+          component: 'form',
+        }}
+      >
+        <DialogTitle>تعديل المهمة</DialogTitle>
+        <DialogContent>
+          <TextField
+            autoFocus
+            required
+            margin="dense"
+            id="name"
+            name="text"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleUpdataClose}>إلغاء</Button>
+          <Button type="submit"
+           onClick={handleUpdateConfrim}
+          >حفظ التعديل</Button>
+        </DialogActions>
+      </Dialog>
+        {/* Edit MODEL */}
        <ul>
         <li style={{marginTop: "5px"}}>{note.description}</li>
       </ul>
@@ -64,7 +107,10 @@ const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim}) => {
         <DeleteIcon  style={{paddingRight: "5px"}}/>
         {/* Dealet */}
       </Button>
-      <Button variant="contained" style={{background: "primary" , marginRight: '10px'}}>
+      <Button variant="contained"
+       style={{background: "primary" , marginRight: '10px'}}
+       onClick={handleUpdatClick}
+       >
         تعديل
         <EditIcon  style={{paddingRight: "5px"}}/>
       </Button>

@@ -37,8 +37,11 @@ const Notes = () => {
     function handleCheckClickDeleteConfrim(ideasId){
      const updatedNotes = addnote.filter((t) => t.id !== ideasId)
       setAddnote(updatedNotes);
-
     }
+      // Function to handle Updit click
+      function handleCheckClickUpdateConfrim(ideasId){
+       alert("aaa")
+       }
 
   // Function to add new note
   const handleAddnote = () => {
@@ -55,13 +58,13 @@ const Notes = () => {
   const Ideasmap = addnote
     .filter(n => !n.isCompleted)
     .map((n) => {
-      return <Ideas key={n.id} note={n} handleCheckClick={handleCheckClick} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} />;
+      return <Ideas key={n.id} note={n} handleCheckClick={handleCheckClick} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} handleCheckClickUpdateConfrim={handleCheckClickUpdateConfrim} />;
     });
 
   const CompletedTasks = addnote
     .filter(n => n.isCompleted)
     .map((n) => {
-      return <Ideas key={n.id} note={n} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} />;
+      return <Ideas key={n.id} note={n} handleCheckClickDeleteConfrim={handleCheckClickDeleteConfrim} handleCheckClickUpdateConfrim={handleCheckClickUpdateConfrim}/>;
     });
 
   return (
