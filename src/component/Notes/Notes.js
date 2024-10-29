@@ -38,10 +38,16 @@ const Notes = () => {
      const updatedNotes = addnote.filter((t) => t.id !== ideasId)
       setAddnote(updatedNotes);
     }
-      // Function to handle Updit click
-      function handleCheckClickUpdateConfrim(ideasId){
-       alert("aaa")
-       }
+    function handleCheckClickUpdateConfrim(ideasId, newDescription) {
+      const updatedNotes = addnote.map((t) => {
+        if (t.id === ideasId) {
+          return { ...t, description: newDescription };
+        }
+        return t;
+      });
+      setAddnote(updatedNotes);
+    }
+    
 
   // Function to add new note
   const handleAddnote = () => {

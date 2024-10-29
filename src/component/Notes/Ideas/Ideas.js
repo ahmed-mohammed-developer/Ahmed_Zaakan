@@ -14,6 +14,8 @@ import TextField from '@mui/material/TextField';
 const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleCheckClickUpdateConfrim}) => {
     const [showDeleteAlert, setShowDeleteAlert] = useState(false)
     const [showUpdataAlert, setShowUpdataAlert] = useState(false)
+    const [updatanote, setupdatanote] = useState("")
+
 
 
     function handleCheckTrueIsComplet() {
@@ -26,8 +28,10 @@ const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleC
    function handleUpdatClick() {
     setShowUpdataAlert(true)
  }
- function handleUpdateConfrim(){
-  handleCheckClickUpdateConfrim(note.id)
+
+ function handleUpdateConfrim() {
+  handleCheckClickUpdateConfrim(note.id, updatanote);
+  setShowUpdataAlert(false); // إغلاق `Dialog` بعد التحديث
 }
     //function Update
     function handleDeletClick() {
@@ -84,6 +88,11 @@ const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleC
             type="text"
             fullWidth
             variant="standard"
+            value={updatanote}
+            onChange={(e) => {
+              setupdatanote(e.target.value);
+            }}
+            
           />
         </DialogContent>
         <DialogActions>
