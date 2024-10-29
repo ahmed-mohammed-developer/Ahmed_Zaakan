@@ -14,7 +14,7 @@ import TextField from '@mui/material/TextField';
 const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleCheckClickUpdateConfrim}) => {
     const [showDeleteAlert, setShowDeleteAlert] = useState(false)
     const [showUpdataAlert, setShowUpdataAlert] = useState(false)
-    const [updatanote, setupdatanote] = useState("")
+    const [updatanote, setupdatanote] = useState(note.description)
 
 
 
@@ -73,14 +73,10 @@ const Ideas = ({note, handleCheckClick,  handleCheckClickDeleteConfrim,  handleC
         <Dialog
         onClose={handleUpdataClose}
         open={showUpdataAlert}
-        PaperProps={{
-          component: 'form',
-        }}
       >
         <DialogTitle>تعديل المهمة</DialogTitle>
         <DialogContent>
           <TextField
-            autoFocus
             required
             margin="dense"
             id="name"

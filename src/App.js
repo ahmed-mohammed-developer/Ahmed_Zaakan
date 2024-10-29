@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { createTheme, ThemeProvider   } from '@mui/material/styles';
+import {createTheme, ThemeProvider } from '@mui/material/styles';
 import NavBar from './component/NavBar/NavBar';
 import Footer from './component/Footer/Footer.js';
 import { FaWhatsapp } from 'react-icons/fa';
