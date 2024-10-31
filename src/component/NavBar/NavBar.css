@@ -21,14 +21,11 @@
     font-family: "Tajawal", "Cairo";
     text-decoration: none;
 }
-.navbar-brandreact:hover  {
-    color: #fff;
-    transition: 2s;
-}
-.navbar-brandreact:focus {
-    color: #fff;
-}
 
+.logo {
+    height: 50px;
+    cursor: pointer;
+}
 .navbar-bar {
     font-size: 32px !important;
     color: #ffffffce;
@@ -75,16 +72,14 @@
         font-size: 20px;
         margin-top: 10px;
     }
-    .navbar-bar {
-        font-size: 24px !important;
-    }
+    .logo {
+        height: 35px;
+    } 
 }
 @media (width < 500px) {
     .list-item-button {
         font-size: 16px;
-    
     }
-    
     .list-item-icon {
         font-size: 20px;
     }

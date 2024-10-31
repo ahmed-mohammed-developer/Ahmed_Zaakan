@@ -24,6 +24,8 @@ import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import { NavLink  } from 'react-router-dom'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
+
 
 
 
@@ -191,9 +193,9 @@ const NavBar = () => {
         <div className='navbarreact' id='navbarid'>
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
-                <h1 className="navbar-brandreact">
-                    أحمد زعــــكان
-                </h1>
+            <Link to={`/`}>
+            <img className='logo' src={`${process.env.PUBLIC_URL}/images/logoٍSmalee.png`} alt="أحمد زعكان" />
+            </Link>
                 <div>
                     <Button onClick={toggleDrawer('right', true)}>
                         <HorizontalSplitOutlinedIcon className='navbar-bar' />

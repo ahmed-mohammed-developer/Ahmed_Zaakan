@@ -1,0 +1,84 @@
+.hero2 {
+    position: relative;
+    background-image: url('/public/images/1111.jpg');
+    background-size: cover;
+    background-position: left bottom; /* تعيين الخلفية إلى يسار تحت */
+    height: 100%; /* تعيين ارتفاع العنصر إلى 100vh */
+    width: 100%;
+    overflow: hidden; /* تأكد من أن أي جزء من الصورة يتجاوز الحدود لا يظهر */
+    margin-top: 80px;
+    padding-block: 150px;
+  }
+  
+  .hero2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 59, 64, 0.627); /* الخلفية الخيفية */
+    z-index: 1;
+  }
+  
+  .hero2 .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+    .hero2 h1 {
+        font-size: 48px; /* يمكنك تجربة 64px أيضاً */
+        font-weight: bold;
+        text-align: right; /* لتحديد موقع النص في اليمين */
+        text-align: right;
+        font-family: "Tajawal", "Cairo";
+        color: #ffffffce;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة تأثير الظل */
+    }
+  
+    .hero2 p {
+        font-size: 18px;
+        font-family: 'Cairo', sans-serif; /* تأكد من إضافة نوع الخط كايرو */
+        line-height: 1.8;
+        color: #ffffffce;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة تأثير الظل */
+        max-width: 80%;
+        width: 100%;
+      }
+
+  .d-flex{
+    flex-direction: column;
+    max-height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  
+@media (max-width: 770px) {
+    .hero2{
+        padding-block: 50px;
+
+    }
+  .hero2 h1 {
+    font-size: 36px; /* تعديل الحجم للشاشات الأصغر */
+  }
+  .hero2 p {
+    font-size: 16px; /* تعديل الحجم للشاشات الأصغر */
+  }
+}
+@media (max-width: 580px) {
+  .herooadding{
+     padding-right: 12px !important;
+  }
+}
+@media (max-width: 500px) {
+    .hero2{
+        margin-top: 75px;
+    }
+  .hero2 h1 {
+    font-size: 28px; /* تعديل الحجم للشاشات الأصغر */
+  }
+  .hero2 p {
+    font-size: 14px; /* تعديل الحجم للشاشات الأصغر */
+  }
+}

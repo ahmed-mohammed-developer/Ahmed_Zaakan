@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="container">
             <div className="row mb-2 baner">
                 <div className="col-lg-3 col-md-6 col-sm-6 imgSection marginBottom">
-                <h2>أحمد زعــــكان</h2>
+                <img className='logo' src={`${process.env.PUBLIC_URL}/images/logoٍSmalee.png`} alt="أحمد زعكان" />
                 </div>
                     <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="deatelsSection">

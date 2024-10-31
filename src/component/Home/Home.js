@@ -9,6 +9,7 @@ import Technologiesused from '../Landingpage/Technologiesused/Technologiesused.j
 import Features from '../Landingpage/Features/Features.js';
 import Contactme from '../Landingpage/Contactme/Contactme.js';
 import MyBooks from '../Landingpage/MyBooks/MyBooks.js';
+import Home2 from '../Landingpage/Home2/Home2.js';
 
 const Home = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
   return (
     <>
-    <Hero />
+    <Home2 />
       <Service />
       <Seteps />
       <Technologiesused />
