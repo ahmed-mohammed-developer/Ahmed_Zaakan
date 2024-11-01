@@ -10,6 +10,8 @@ import Home from './component/Home/Home.js';
 import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';
 import Resume from './component/Resume/Resume.js';
 import Notes from './component/Notes/Notes.js';
+import { ToastProvider } from './component/Notes/context/ToastContext.js';
+
 
 
 
@@ -26,6 +28,7 @@ const theme = createTheme({
 
 const App = () => {
   return (
+    <ToastProvider>
     <ThemeProvider theme={theme}>
       <HashRouter>
       <NavBar />
@@ -41,6 +44,7 @@ const App = () => {
       </a>
       <Footer />
     </ThemeProvider>
+    </ToastProvider>
   );
 }
 

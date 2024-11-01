@@ -2,6 +2,7 @@
     margin-top: 100px;
     padding-top: 50px;
     margin-bottom: 80px;
+    margin-inline: 10px;
 }
 .titlenote {
     font-size: 60px !important;
@@ -14,9 +15,10 @@
     1px 1px 0 #000; 
     text-align: center;
     font-family: "Tajawal", sans-serif !important;
+    margin-bottom: 20px !important;
 }
 .rightsection {
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
 
 }
 .leftSection {
@@ -24,6 +26,7 @@
     background-color: #f0c310b9;
     border-radius: 10px;
     height: fit-content;
+    margin-bottom: 50px;
 }
 .leftSection h3 {
     font-family: "Tajawal", sans-serif !important;
@@ -36,10 +39,22 @@
     font-size: 20px;
     font-weight: 400;
 }
+.boxshado {
+    max-width: 500px;
+  width: 100%; /* عرض البوكس */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  margin-inline: auto; /* مساحة خارجية حول البوكس */
+  margin-block: 20px;
+  padding: 20px; /* مساحة داخلية */
+  border-radius: 10px;
+}
+.buttonideas {
+    margin-block: 20px !important;
+}
 .buttonnotes {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: left;
+    margin-left: 10px;
 }
 .checkSection {
     background-color: #10f041b9;
@@ -52,7 +67,6 @@
     padding: 4px;
     border-radius: 10px;
     height: fit-content;
-    margin-top: 50px;
 }
 .checkSection h3 ,
 .offSection h3 {
@@ -66,4 +80,62 @@
 .offSection ul li {
     font-size: 20px;
     font-weight: 400;
+}
+
+.containerNote {
+    border: 1px solid #00000071;
+    padding: 10px;
+    border-radius: 10px;
+}
+.togglemain {
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex !important;
+    border-radius: 10px !important;
+    border: 1px solid #b4343471;
+    width: fit-content;
+    margin-inline: auto;
+}
+.completed {
+    border-left: 1px solid #00000071 !important;
+    border-right: 1px solid #00000071 !important;
+
+}
+.buutonStart {
+    margin-bottom: 20px !important;
+
+}
+@media (max-width: 500px) {
+    .titlenote{
+        font-size: 40px !important;
+    }
+    .leftSection h3,
+    .checkSection h3 {
+        font-size: 15px !important;
+    }
+    .fonZise {
+        font-size: 10px !important;
+    }
+    .checkSection ul li ,
+    .offSection ul li {
+        font-size: 15px ;
+    }
+    .buttonideas {
+        font-size: 10px !important;
+        width: fit-content !important;
+        padding-block: 2px !important;
+    }
+    .buttonideasicon {
+        font-size: 15px !important;
+    }
+    .leftSection ul li {
+        font-size: 14px !important;
+    }
+    .buutonStart {
+        font-size: 10px !important;
+        width: fit-content;
+        padding-inline: 0px !important;
+        padding-block: 5px !important;
+    }
 }
