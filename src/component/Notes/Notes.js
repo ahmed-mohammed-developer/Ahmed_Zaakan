@@ -174,10 +174,16 @@ const [showUpdataAlert, setShowUpdataAlert] = useState(false);
   }
 
   // استخدام تأثير لتحميل الملاحظات من التخزين المحلي عند تحميل المكون
-  useEffect(() => {
-    const storgNote = JSON.parse(localStorage.getItem("notesave"));
-    setAddnote(storgNote);
-  }, []);
+  // استخدام تأثير لتحميل الملاحظات من التخزين المحلي عند تحميل المكون
+useEffect(() => {
+  const storedNotes = JSON.parse(localStorage.getItem("notesave"));
+  if (storedNotes && Array.isArray(storedNotes)) {
+    setAddnote(storedNotes);
+  } else {
+    setAddnote(noteslist); // قم بتعيين المصفوفة الافتراضية في حالة عدم وجود ملاحظات محفوظة
+  }
+}, []);
+
 
   return (
     <div className='note'>
