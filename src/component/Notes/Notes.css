@@ -1,8 +1,8 @@
 .note{
-    margin-top: 100px;
-    padding-top: 50px;
-    margin-bottom: 80px;
-    margin-inline: 10px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    padding-inline: 10px;
+    background-color: #223b4023;
 }
 .titlenote {
     font-size: 56px !important;
@@ -47,16 +47,6 @@
   .leftSection li:last-child {
     border-bottom: none; /* إزالة الحدود من العنصر الأخير */
   }
-  
-  @media (max-width: 500px) {
-    .leftSection {
-      font-size: 14px; /* ضبط حجم النص للشاشات الصغيرة */
-    }
-  
-    .leftSection h3 {
-      font-size: 20px; /* ضبط حجم العنوان للشاشات الصغيرة */
-    }
-  }
 .buttonideas {
     margin-block: 20px !important;
 }
@@ -71,14 +61,6 @@
 .offSection {
     background-color: #4d5059b9;
 }
-.checkSection ,
-.offSection {
-    padding: 4px;
-    border-radius: 10px;
-    height: fit-content;
-}
-
-
 .togglemain {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -99,29 +81,94 @@
     background-color: #007bff; /* تغيير اللون إلى الأزرق */
     color: #fff; /* تغيير لون النص إلى الأبيض */
   }
-  
-  
 
 .togglemain .Mui-selected,
 .togglemain .MuiToggleButton-root:hover {
   background-color: #0056b3; /* لون ثابت عند التحديد والهوفر */
 }
-
-
-
   .fonZise {
     font-size: 16px; /* الحجم الافتراضي */
     font-weight: 700; /* الوزن الافتراضي */
   }
-  
-  @media (max-width: 500px) {
-    .fonZise {
-      font-size: 14px; /* الحجم للشاشات الصغيرة */
-      font-weight: 600; /* الوزن للشاشات الصغيرة */
-    }
+/*-------*/
+
+.inputStyle {
+    background-color: rgba(25, 118, 210, 0.08); /* لون يتماشى مع #007bff */
+    color: #000; /* لون النص أسود */
+    border-radius: 10px; /* تعيين border-radius إلى 10px */
   }
+  
+  .inputStyle .MuiInputBase-input {
+    font-size: 16px; /* ضبط حجم الخط الافتراضي */
+  }
+  .buttonStart {
+    background: #fff; /* لون الخلفية أبيض */
+    color: black; /* لون النص أسود */
+    font-weight: 400;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    border: 1px solid black; /* الحدود سوداء */
+  }
+  
+  .buttonStart:disabled {
+    background: #fff; /* لون الخلفية أبيض عند التعطيل */
+    color: black; /* لون النص أسود عند التعطيل */
+    border: 1px solid black; /* الحدود سوداء عند التعطيل */
+  }
+  
+  .buttonStart:hover:not(:disabled) {
+    background: lightblue; /* لون الخلفية عند التمرير */
+    color: blue; /* لون النص عند التمرير */
+    border: 1px solid blue; /* الحدود زرقاء عند التمرير */
+  }
+  
+  .buttonStart .MuiInputBase-input {
+    font-size: 16px; /* حجم النص الافتراضي */
+  }
+  .leftSection {
+    background-color: #fff; /* خلفية العنصر بالأبيض */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* شادو خفيف حول القسم */
+    padding: 20px;
+    border-radius: 10px; /* إضافة الزوايا الدائرية */
+    font-size: 16px; /* حجم النص الافتراضي */
+  }
+  .leftSection h3 {
+    font-size: 24px; /* حجم العنوان الافتراضي */
+    font-weight: bold;
+  }
+  
+  .leftSection ul {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+  }
+  
+  .leftSection li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* بوردر بوتن خفيف جداً وناعم باللون الرمادي */
+  }
+  
+  .leftSection li:last-child {
+    border-bottom: none; /* إزالة الحدود من العنصر الأخير */
+  }
+/*--------*/
 @media (max-width: 500px) {
-    .titlenote{
+    .leftSection {
+      font-size: 14px; /* ضبط حجم النص للشاشات الصغيرة */
+    }
+    .leftSection h3 {
+      font-size: 20px; /* ضبط حجم العنوان للشاشات الصغيرة */
+    }
+    .buttonStart .MuiInputBase-input {
+        font-size: 14px; /* ضبط حجم النص للشاشات الصغيرة */
+      }
+      .inputStyle .MuiInputBase-input {
+        font-size: 14px; /* ضبط حجم الخط للشاشات الصغيرة */
+      }
+      .fonZise {
+        font-size: 14px; /* الحجم للشاشات الصغيرة */
+        font-weight: 600; /* الوزن للشاشات الصغيرة */
+      }
+      .titlenote{
         font-size: 36px !important;
     }
     .leftSection h3,
@@ -149,4 +196,12 @@
         padding-inline: 0px !important;
         padding-block: 5px !important;
     }
+    .leftSection {
+        font-size: 14px; /* ضبط حجم النص للشاشات الصغيرة */
+      }
+    
+      .leftSection h3 {
+        font-size: 20px; /* ضبط حجم العنوان للشاشات الصغيرة */
+      }
 }
+

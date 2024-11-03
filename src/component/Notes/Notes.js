@@ -16,51 +16,9 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import { makeStyles } from '@mui/styles';
 import { AllInclusive, CheckCircle, Cancel } from '@mui/icons-material'; // استيراد الأيقونات
 
 
-const useStyles = makeStyles({
-  input: {
-    backgroundColor: 'rgba(25, 118, 210, 0.08)', // لون يتماشى مع #007bff
-    color: '#000', // لون النص أسود
-    borderRadius: '10px', // تعيين border-radius إلى 10px
-    '& .MuiInputBase-input': {
-      fontSize: '16px', // ضبط حجم الخط الافتراضي
-    },
-    '@media (max-width: 500px)': {
-      '& .MuiInputBase-input': {
-        fontSize: '14px', // ضبط حجم الخط للشاشات الصغيرة
-      },
-    },
-  },
-    buttonStart: {
-      background: '#fff', // لون الخلفية أبيض
-      color: 'black', // لون النص أسود
-      fontWeight: 400,
-      marginBottom: "10px",
-      marginTop: "10px",
-      border: '1px solid black', // الحدود سوداء
-      '&:disabled': {
-        background: '#fff', // لون الخلفية أبيض عند التعطيل
-        color: 'black', // لون النص أسود عند التعطيل
-        border: '1px solid black', // الحدود سوداء عند التعطيل
-      },
-      '&:hover:not(:disabled)': {
-        background: 'lightblue', // لون الخلفية عند التمرير
-        color: 'blue', // لون النص عند التمرير
-        border: '1px solid blue', // الحدود زرقاء عند التمرير
-      },
-      '& .MuiInputBase-input': {
-        fontSize: '16px', // حجم النص الافتراضي
-      },
-      '@media (max-width: 500px)': {
-        '& .MuiInputBase-input': {
-          fontSize: '14px', // ضبط حجم النص للشاشات الصغيرة
-        },
-      },
-    },
-});
 
 
 const noteslist = [
@@ -72,7 +30,6 @@ const observer = new ResizeObserver((entries) => {
 });
 
 const Notes = () => {
-  const classes = useStyles();
   const { showHideToast } = useContext(ToastContext);
   const [addnote, setAddnote] = useState(noteslist);
   const [descriptioninput, setDescriptioninput] = useState("");
@@ -335,11 +292,11 @@ useEffect(() => {
       rows={2} // فقط صف واحد
       variant="filled"
       fullWidth
-      className={classes.input}
       value={descriptioninput}
       onChange={(e) => {
         setDescriptioninput(e.target.value);
       }}
+      className='inputStyle'
     />
                 
     <Stack spacing={2} direction="row">
@@ -347,7 +304,7 @@ useEffect(() => {
         variant="contained"
         onClick={handleAddnote}
         disabled={descriptioninput.length === 0}
-        className={classes.buttonStart}
+        className='buttonStart'
       >
         إضافة
       </Button>
