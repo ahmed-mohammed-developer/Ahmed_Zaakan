@@ -16,14 +16,63 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
+import { makeStyles } from '@mui/styles';
+import { AllInclusive, CheckCircle, Cancel } from '@mui/icons-material'; // استيراد الأيقونات
+
+
+const useStyles = makeStyles({
+  input: {
+    backgroundColor: 'rgba(25, 118, 210, 0.08)', // لون يتماشى مع #007bff
+    color: '#000', // لون النص أسود
+    borderRadius: '10px', // تعيين border-radius إلى 10px
+    '& .MuiInputBase-input': {
+      fontSize: '16px', // ضبط حجم الخط الافتراضي
+    },
+    '@media (max-width: 500px)': {
+      '& .MuiInputBase-input': {
+        fontSize: '14px', // ضبط حجم الخط للشاشات الصغيرة
+      },
+    },
+  },
+    buttonStart: {
+      background: '#fff', // لون الخلفية أبيض
+      color: 'black', // لون النص أسود
+      fontWeight: 400,
+      marginBottom: "10px",
+      marginTop: "10px",
+      border: '1px solid black', // الحدود سوداء
+      '&:disabled': {
+        background: '#fff', // لون الخلفية أبيض عند التعطيل
+        color: 'black', // لون النص أسود عند التعطيل
+        border: '1px solid black', // الحدود سوداء عند التعطيل
+      },
+      '&:hover:not(:disabled)': {
+        background: 'lightblue', // لون الخلفية عند التمرير
+        color: 'blue', // لون النص عند التمرير
+        border: '1px solid blue', // الحدود زرقاء عند التمرير
+      },
+      '& .MuiInputBase-input': {
+        fontSize: '16px', // حجم النص الافتراضي
+      },
+      '@media (max-width: 500px)': {
+        '& .MuiInputBase-input': {
+          fontSize: '14px', // ضبط حجم النص للشاشات الصغيرة
+        },
+      },
+    },
+});
 
 
 const noteslist = [
   { id: uuidv4(), description: 'قراءة كتاب', isCompleted: false },
   { id: uuidv4(), description: 'مذاكرة الإنجليزي', isCompleted: false }
 ];
+const observer = new ResizeObserver((entries) => {
+  // إضافة ملاحظة هنا لتجنب مشكلة الحلقة
+});
 
 const Notes = () => {
+  const classes = useStyles();
   const { showHideToast } = useContext(ToastContext);
   const [addnote, setAddnote] = useState(noteslist);
   const [descriptioninput, setDescriptioninput] = useState("");
@@ -35,6 +84,15 @@ const [updatanote, setupdatanote] = useState("");
 const [showUpdataAlert, setShowUpdataAlert] = useState(false);
 
 
+
+
+
+// التأكد من إيقاف المراقب قبل التحديث
+useEffect(() => {
+  observer.disconnect();
+  // أي عمليات تحتاج للتحديث هنا
+  observer.observe(document.querySelector('.note'));
+}, [addnote]);
 
 
   // دالة لمعالجة الضغط على زر الإنجاز
@@ -186,6 +244,7 @@ useEffect(() => {
 
 
   return (
+    
     <div className='note'>
       {/* DELETE MODEL */}
       <Dialog
@@ -245,49 +304,54 @@ useEffect(() => {
         <Typography variant="h2" gutterBottom className='titlenote'>
           قائمة المهام:
         </Typography>
-        <ToggleButtonGroup
-          color="primary"
-          value={displayedNoteType}
-          exclusive
-          onChange={handleChangeType}
-          className='togglemain'
-        >
-          <ToggleButton value="all" className='fonZise'>جميع المهام</ToggleButton>
-          <ToggleButton value="completed" className='completed fonZise'>المهام المنجزة</ToggleButton>
-          <ToggleButton value="non-completed" className='fonZise'>المهام غير المنجزة</ToggleButton>
-        </ToggleButtonGroup>
+        
+    <ToggleButtonGroup
+      color="primary"
+      value={displayedNoteType}
+      exclusive
+      onChange={handleChangeType}
+      className='togglemain'
+    >
+      <ToggleButton value="all" className='fonZise'>
+        <AllInclusive style={{ marginLeft: "5px" }} />  المهام
+      </ToggleButton>
+      <ToggleButton value="completed" className='fonZise'>
+        <CheckCircle style={{ marginLeft: "5px" }} />  المنجزة
+      </ToggleButton>
+      <ToggleButton value="non-completed" className='fonZise'>
+      <Cancel style={{ marginLeft: "5px" }} />
+          غير المنجزة
+      </ToggleButton>
+    </ToggleButtonGroup>
+
+
         {displayedNoteType === 'all' && (
           <Grid container spacing={2}>
             <Grid item xs={12} md={12}>
               <div>
-                <TextField
-                  id="filled-multiline-static"
-                  multiline
-                  rows={4}
-                  variant="filled"
-                  fullWidth
-                  className='rightsection'
-                  value={descriptioninput}
-                  onChange={(e) => {
-                    setDescriptioninput(e.target.value);
-                  }}
-                />
-                <Stack spacing={2} direction="row">
-                  <Button
-                    variant="contained"
-                    style={{
-                      background: '#fff',
-                      color: 'black',
-                      fontWeight: 400,
-                      border: '1px solid black',
-                    }}
-                    onClick={handleAddnote}
-                    disabled={descriptioninput.length === 0}
-                    className='buutonStart'
-                  >
-                    إضافة
-                  </Button>
-                </Stack>
+      <TextField
+      id="filled-multiline-static"
+      multiline
+      rows={2} // فقط صف واحد
+      variant="filled"
+      fullWidth
+      className={classes.input}
+      value={descriptioninput}
+      onChange={(e) => {
+        setDescriptioninput(e.target.value);
+      }}
+    />
+                
+    <Stack spacing={2} direction="row">
+      <Button
+        variant="contained"
+        onClick={handleAddnote}
+        disabled={descriptioninput.length === 0}
+        className={classes.buttonStart}
+      >
+        إضافة
+      </Button>
+    </Stack>
               </div>
             </Grid>
           </Grid>
@@ -304,7 +368,7 @@ useEffect(() => {
             </Grid>
             <Grid container spacing={2}>
               <Grid item xs={12} lg={12}>
-                <div className="checkSection">
+                <div className="leftSection" style={{marginTop: '20px'}}>
                   <h3>المهام المنجزة</h3>
                   <ul>{CompletedTasks}</ul>
                 </div>
@@ -316,8 +380,7 @@ useEffect(() => {
         {displayedNoteType === 'completed' && (
           <Grid container spacing={2}>
             <Grid item xs={12} lg={12}>
-              <div className="checkSection">
-                <h3>المهام المنجزة</h3>
+            <div className="leftSection" style={{marginTop: '20px'}}>                <h3>المهام المنجزة</h3>
                 <ul>{CompletedTasks}</ul>
               </div>
             </Grid>
